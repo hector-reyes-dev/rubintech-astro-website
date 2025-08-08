@@ -1,0 +1,99 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  url?: string;
+}
+
+const { 
+  title, 
+  description = "Rubin Tech ofrece soluciones tecnológicas personalizadas para empresas. Desarrollo web, aplicaciones móviles, consultoría IT y transformación digital.",
+  image = "/og-image.jpg",
+  url = "https://rubintech.com"
+} = Astro.props;
+
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="desarrollo web, aplicaciones móviles, consultoría IT, transformación digital, soluciones tecnológicas, Rubin Tech" />
+    <meta name="author" content="Rubin Tech" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={url} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:site_name" content="Rubin Tech" />
+    <meta property="og:locale" content="es_ES" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={image} />
+    <meta property="twitter:creator" content="@rubintech" />
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#1E40AF" />
+    <meta name="msapplication-TileColor" content="#1E40AF" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Rubin Tech" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Rubin Tech",
+        "url": "https://rubintech.com",
+        "logo": "https://rubintech.com/logo.png",
+        "description": "Soluciones tecnológicas personalizadas para empresas",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "MX"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+52-555-123-4567",
+          "contactType": "customer service",
+          "availableLanguage": ["Spanish", "English"]
+        },
+        "sameAs": [
+          "https://linkedin.com/company/rubintech",
+          "https://twitter.com/rubintech",
+          "https://github.com/rubintech"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

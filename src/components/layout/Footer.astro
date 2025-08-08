@@ -1,0 +1,107 @@
+---
+import Icon from '../ui/Icon.astro';
+---
+
+<footer class="bg-gray-900 text-white">
+  <div class="container mx-auto px-4 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Company Info -->
+      <div class="lg:col-span-1">
+        <div class="flex items-center space-x-2 mb-6">
+          <div class="w-8 h-8 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center">
+            <Icon name="code" size="20" class="text-white" />
+          </div>
+          <span class="text-xl font-bold">Rubin Tech</span>
+        </div>
+        <p class="text-gray-300 mb-6 leading-relaxed">
+          Transformamos ideas en soluciones tecnológicas innovadoras. Especializados en desarrollo web, aplicaciones móviles y consultoría IT.
+        </p>
+        <div class="flex space-x-4">
+          <a href="https://linkedin.com/company/rubintech" class="text-gray-400 hover:text-primary-400 transition-colors" aria-label="LinkedIn">
+            <Icon name="linkedin" size="20" />
+          </a>
+          <a href="https://twitter.com/rubintech" class="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Twitter">
+            <Icon name="twitter" size="20" />
+          </a>
+          <a href="https://github.com/rubintech" class="text-gray-400 hover:text-primary-400 transition-colors" aria-label="GitHub">
+            <Icon name="github" size="20" />
+          </a>
+          <a href="mailto:contacto@rubintech.com" class="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Email">
+            <Icon name="mail" size="20" />
+          </a>
+        </div>
+      </div>
+      
+      <!-- Services -->
+      <div>
+        <h3 class="text-lg font-semibold mb-6">Servicios</h3>
+        <ul class="space-y-3">
+          <li><a href="#servicios" class="text-gray-300 hover:text-white transition-colors">Desarrollo Web</a></li>
+          <li><a href="#servicios" class="text-gray-300 hover:text-white transition-colors">Aplicaciones Móviles</a></li>
+          <li><a href="#servicios" class="text-gray-300 hover:text-white transition-colors">Consultoría IT</a></li>
+          <li><a href="#servicios" class="text-gray-300 hover:text-white transition-colors">Transformación Digital</a></li>
+          <li><a href="#servicios" class="text-gray-300 hover:text-white transition-colors">Mantenimiento</a></li>
+          <li><a href="#servicios" class="text-gray-300 hover:text-white transition-colors">Optimización</a></li>
+        </ul>
+      </div>
+      
+      <!-- Company -->
+      <div>
+        <h3 class="text-lg font-semibold mb-6">Empresa</h3>
+        <ul class="space-y-3">
+          <li><a href="#inicio" class="text-gray-300 hover:text-white transition-colors">Acerca de</a></li>
+          <li><a href="#proyectos" class="text-gray-300 hover:text-white transition-colors">Proyectos</a></li>
+          <li><a href="#testimonios" class="text-gray-300 hover:text-white transition-colors">Testimonios</a></li>
+          <li><a href="/blog" class="text-gray-300 hover:text-white transition-colors">Blog</a></li>
+          <li><a href="/carreras" class="text-gray-300 hover:text-white transition-colors">Carreras</a></li>
+          <li><a href="/privacidad" class="text-gray-300 hover:text-white transition-colors">Privacidad</a></li>
+        </ul>
+      </div>
+      
+      <!-- Support -->
+      <div>
+        <h3 class="text-lg font-semibold mb-6">Soporte</h3>
+        <ul class="space-y-3">
+          <li><a href="#contacto" class="text-gray-300 hover:text-white transition-colors">Contacto</a></li>
+          <li><a href="/ayuda" class="text-gray-300 hover:text-white transition-colors">Centro de Ayuda</a></li>
+          <li><a href="/documentacion" class="text-gray-300 hover:text-white transition-colors">Documentación</a></li>
+          <li><a href="/status" class="text-gray-300 hover:text-white transition-colors">Estado del Sistema</a></li>
+          <li><a href="/terminos" class="text-gray-300 hover:text-white transition-colors">Términos de Uso</a></li>
+        </ul>
+        
+        <!-- Contact Info -->
+        <div class="mt-8">
+          <h4 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Contacto Directo</h4>
+          <div class="space-y-2">
+            <div class="flex items-center space-x-2 text-sm text-gray-300">
+              <Icon name="phone" size="16" />
+              <span>+52 555 123 4567</span>
+            </div>
+            <div class="flex items-center space-x-2 text-sm text-gray-300">
+              <Icon name="mail" size="16" />
+              <span>contacto@rubintech.com</span>
+            </div>
+            <div class="flex items-center space-x-2 text-sm text-gray-300">
+              <Icon name="location" size="16" />
+              <span>Ciudad de México, México</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-800 mt-12 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div class="text-sm text-gray-400">
+          © 2024 Rubin Tech. Todos los derechos reservados.
+        </div>
+        <div class="flex items-center space-x-6 text-sm text-gray-400">
+          <a href="/privacidad" class="hover:text-white transition-colors">Política de Privacidad</a>
+          <a href="/terminos" class="hover:text-white transition-colors">Términos de Servicio</a>
+          <a href="/cookies" class="hover:text-white transition-colors">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
