@@ -34,11 +34,13 @@ Sitio web corporativo moderno para Rubin Tech, desarrollado con **Astro** y **Ta
 ## 🎨 Componentes Principales
 
 ### Layout
+
 - **Header**: Navegación responsive con menú móvil
 - **Footer**: Enlaces organizados y información de contacto
 - **Layout**: Estructura base con SEO optimizado
 
 ### Secciones
+
 - **Hero**: Sección principal con CTA y elementos visuales
 - **Banner**: Indicadores de confianza y estadísticas
 - **Services**: Grid de servicios con iconos y características
@@ -47,6 +49,7 @@ Sitio web corporativo moderno para Rubin Tech, desarrollado con **Astro** y **Ta
 - **CTA**: Llamada a la acción final
 
 ### UI Components
+
 - **Button**: Botón reutilizable con variantes y tamaños
 - **Card**: Tarjetas con diferentes estilos
 - **Icon**: Sistema de iconos SVG

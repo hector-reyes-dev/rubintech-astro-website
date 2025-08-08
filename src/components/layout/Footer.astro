@@ -3,39 +3,39 @@ const currentYear = new Date().getFullYear();
 
 const footerSections = [
   {
-    title: 'Servicios',
+    title: "Servicios",
     links: [
-      { name: 'Consultoría de Proyectos', href: '/servicios#consultoria' },
-      { name: 'Desarrollo de Software', href: '/servicios#desarrollo' },
-      { name: 'E-commerce y Páginas Web', href: '/servicios#ecommerce' },
-      { name: 'Automatización de Procesos', href: '/servicios#automatizacion' }
-    ]
+      { name: "Consultoría de Proyectos", href: "/servicios#consultoria" },
+      { name: "Desarrollo de Software", href: "/servicios#desarrollo" },
+      { name: "E-commerce y Páginas Web", href: "/servicios#ecommerce" },
+      { name: "Automatización de Procesos", href: "/servicios#automatizacion" },
+    ],
   },
   {
-    title: 'Empresa',
+    title: "Empresa",
     links: [
-      { name: 'Nosotros', href: '/nosotros' },
-      { name: 'Proyectos', href: '/proyectos' },
-      { name: 'Blog', href: '/blog' },
-      { name: 'Contacto', href: '/contacto' }
-    ]
+      { name: "Nosotros", href: "/nosotros" },
+      { name: "Proyectos", href: "/proyectos" },
+      { name: "Blog", href: "/blog" },
+      { name: "Contacto", href: "/contacto" },
+    ],
   },
   {
-    title: 'Soporte',
+    title: "Soporte",
     links: [
-      { name: 'Centro de Ayuda', href: '/ayuda' },
-      { name: 'Documentación', href: '/docs' },
-      { name: 'Estado del Servicio', href: '/status' },
-      { name: 'Términos y Condiciones', href: '/terminos' }
-    ]
-  }
+      { name: "Centro de Ayuda", href: "/ayuda" },
+      { name: "Documentación", href: "/docs" },
+      { name: "Estado del Servicio", href: "/status" },
+      { name: "Términos y Condiciones", href: "/terminos" },
+    ],
+  },
 ];
 
 const socialLinks = [
-  { name: 'LinkedIn', href: '#', icon: 'linkedin' },
-  { name: 'Twitter', href: '#', icon: 'twitter' },
-  { name: 'GitHub', href: '#', icon: 'github' },
-  { name: 'Email', href: 'mailto:contacto@rubintech.com', icon: 'mail' }
+  { name: "LinkedIn", href: "#", icon: "linkedin" },
+  { name: "Twitter", href: "#", icon: "twitter" },
+  { name: "GitHub", href: "#", icon: "github" },
+  { name: "Email", href: "mailto:contacto@rubintech.com", icon: "mail" },
 ];
 ---
 
@@ -46,63 +46,84 @@ const socialLinks = [
       <!-- Company Info -->
       <div class="lg:col-span-1">
         <div class="flex items-center space-x-2 mb-6">
-          <div class="w-8 h-8 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center">
+          <div
+            class="w-8 h-8 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center"
+          >
             <span class="text-white font-bold text-sm">RT</span>
           </div>
           <span class="text-xl font-bold">Rubin Tech</span>
         </div>
         <p class="text-gray-300 mb-6 leading-relaxed">
-          Transformamos desafíos en oportunidades tecnológicas. Soluciones digitales que eliminan barreras, optimizan procesos y crean oportunidades.
+          Transformamos desafíos en oportunidades tecnológicas. Soluciones
+          digitales que eliminan barreras, optimizan procesos y crean
+          oportunidades.
         </p>
         <div class="flex space-x-4">
-          {socialLinks.map((social) => (
-            <a 
-              href={social.href}
-              class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-200"
-              aria-label={social.name}
-            >
-              <span class="text-sm font-medium">{social.icon.charAt(0).toUpperCase()}</span>
-            </a>
-          ))}
+          {
+            socialLinks.map((social) => (
+              <a
+                href={social.href}
+                class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-200"
+                aria-label={social.name}
+              >
+                <span class="text-sm font-medium">
+                  {social.icon.charAt(0).toUpperCase()}
+                </span>
+              </a>
+            ))
+          }
         </div>
       </div>
 
       <!-- Footer Sections -->
-      {footerSections.map((section) => (
-        <div>
-          <h3 class="text-lg font-semibold mb-6">{section.title}</h3>
-          <ul class="space-y-4">
-            {section.links.map((link) => (
-              <li>
-                <a 
-                  href={link.href}
-                  class="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
+      {
+        footerSections.map((section) => (
+          <div>
+            <h3 class="text-lg font-semibold mb-6">{section.title}</h3>
+            <ul class="space-y-4">
+              {section.links.map((link) => (
+                <li>
+                  <a
+                    href={link.href}
+                    class="text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
     </div>
   </div>
 
   <!-- Bottom Footer -->
   <div class="border-t border-gray-800">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
-      <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+      <div
+        class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0"
+      >
         <div class="text-gray-400 text-sm">
           © {currentYear} Rubin Tech. Todos los derechos reservados.
         </div>
         <div class="flex items-center space-x-6 text-sm">
-          <a href="/privacidad" class="text-gray-400 hover:text-white transition-colors duration-200">
+          <a
+            href="/privacidad"
+            class="text-gray-400 hover:text-white transition-colors duration-200"
+          >
             Política de Privacidad
           </a>
-          <a href="/terminos" class="text-gray-400 hover:text-white transition-colors duration-200">
+          <a
+            href="/terminos"
+            class="text-gray-400 hover:text-white transition-colors duration-200"
+          >
             Términos de Uso
           </a>
-          <a href="/cookies" class="text-gray-400 hover:text-white transition-colors duration-200">
+          <a
+            href="/cookies"
+            class="text-gray-400 hover:text-white transition-colors duration-200"
+          >
             Cookies
           </a>
         </div>

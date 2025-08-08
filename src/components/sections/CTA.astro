@@ -1,60 +1,76 @@
 ---
-import Button from '../ui/Button.astro';
-import Icon from '../ui/Icon.astro';
+import Button from "../ui/Button.astro";
+import Icon from "../ui/Icon.astro";
 
 const benefits = [
-  'Consulta gratuita de 30 minutos',
-  'Análisis personalizado de tu negocio',
-  'Propuesta de solución sin compromiso',
-  'Roadmap tecnológico detallado'
+  "Consulta gratuita de 30 minutos",
+  "Análisis personalizado de tu negocio",
+  "Propuesta de solución sin compromiso",
+  "Roadmap tecnológico detallado",
 ];
 ---
 
-<section class="relative bg-gradient-to-br from-primary via-primary-dark to-secondary overflow-hidden">
+<section
+  class="relative bg-gradient-to-br from-primary via-primary-dark to-secondary overflow-hidden"
+>
   <!-- Background Pattern -->
   <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
-  
+
   <!-- Background Decorations -->
-  <div class="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
-  <div class="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
-  
+  <div
+    class="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"
+  >
+  </div>
+  <div
+    class="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl transform translate-x-1/2 translate-y-1/2"
+  >
+  </div>
+
   <div class="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
     <div class="max-w-4xl mx-auto text-center text-white">
       <!-- Main Heading -->
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
         ¿Listo para transformar tu negocio?
       </h2>
-      
+
       <!-- Subtitle -->
       <p class="text-xl lg:text-2xl opacity-90 mb-8 leading-relaxed">
-        Agenda una consulta gratuita y descubre cómo nuestras soluciones 
-        pueden impulsar el crecimiento de tu empresa
+        Agenda una consulta gratuita y descubre cómo nuestras soluciones pueden
+        impulsar el crecimiento de tu empresa
       </p>
-      
+
       <!-- Benefits List -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 max-w-2xl mx-auto">
-        {benefits.map((benefit) => (
-          <div class="flex items-center justify-center md:justify-start space-x-3">
-            <Icon name="check-circle" size="sm" class="text-green-400 flex-shrink-0" />
-            <span class="text-white/90">{benefit}</span>
-          </div>
-        ))}
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 max-w-2xl mx-auto"
+      >
+        {
+          benefits.map((benefit) => (
+            <div class="flex items-center justify-center md:justify-start space-x-3">
+              <Icon
+                name="check-circle"
+                size="sm"
+                class="text-green-400 flex-shrink-0"
+              />
+              <span class="text-white/90">{benefit}</span>
+            </div>
+          ))
+        }
       </div>
-      
+
       <!-- CTA Buttons -->
       <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-        <Button 
-          variant="secondary" 
-          size="lg" 
+        <Button
+          variant="secondary"
+          size="lg"
           class="bg-white text-primary hover:bg-gray-100 shadow-lg"
           href="#contacto"
         >
           <Icon name="calendar" size="sm" class="mr-2" />
           Agendar Consulta Gratuita
         </Button>
-        <Button 
-          variant="outline" 
-          size="lg" 
+        <Button
+          variant="outline"
+          size="lg"
           class="border-white text-white hover:bg-white hover:text-primary"
           href="tel:+1234567890"
         >
@@ -62,37 +78,45 @@ const benefits = [
           Llamar Ahora
         </Button>
       </div>
-      
+
       <!-- Contact Info -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
         <div class="flex flex-col items-center">
-          <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-3">
+          <div
+            class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-3"
+          >
             <Icon name="phone" size="md" class="text-white" />
           </div>
           <div class="text-white/90 text-sm">Teléfono</div>
           <div class="text-white font-semibold">+52 (55) 1234-5678</div>
         </div>
-        
+
         <div class="flex flex-col items-center">
-          <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-3">
+          <div
+            class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-3"
+          >
             <Icon name="mail" size="md" class="text-white" />
           </div>
           <div class="text-white/90 text-sm">Email</div>
           <div class="text-white font-semibold">contacto@rubintech.com</div>
         </div>
-        
+
         <div class="flex flex-col items-center">
-          <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-3">
+          <div
+            class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-3"
+          >
             <Icon name="clock" size="md" class="text-white" />
           </div>
           <div class="text-white/90 text-sm">Horario</div>
           <div class="text-white font-semibold">Lun - Vie: 9:00 - 18:00</div>
         </div>
       </div>
-      
+
       <!-- Trust Badge -->
       <div class="mt-12 pt-8 border-t border-white/20">
-        <div class="flex items-center justify-center space-x-6 text-white/70 text-sm">
+        <div
+          class="flex items-center justify-center space-x-6 text-white/70 text-sm"
+        >
           <div class="flex items-center">
             <Icon name="shield-check" size="sm" class="mr-2" />
             <span>100% Seguro</span>
@@ -113,8 +137,10 @@ const benefits = [
 
 <style>
   .bg-grid-pattern {
-    background-image: 
-      linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.1) 1px,
+        transparent 1px
+      ),
       linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
     background-size: 20px 20px;
   }
