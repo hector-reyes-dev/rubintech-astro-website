@@ -1,0 +1,203 @@
+---
+import Card from '../ui/Card.astro';
+import Icon from '../ui/Icon.astro';
+import Button from '../ui/Button.astro';
+---
+
+<section id="servicios" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        Nuestros
+        <span class="text-gradient bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+          Servicios
+        </span>
+      </h2>
+      <p class="text-xl text-gray-600 leading-relaxed">
+        Ofrecemos soluciones tecnológicas integrales para impulsar tu negocio hacia el futuro digital.
+      </p>
+    </div>
+    
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <!-- Web Development -->
+      <Card variant="hover" class="p-8 text-center group">
+        <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+          <Icon name="code" size="32" class="text-white" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Desarrollo Web</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Sitios web modernos, rápidos y responsivos utilizando las últimas tecnologías como React, Vue.js y Next.js.
+        </p>
+        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            Diseño responsivo
+          </li>
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            SEO optimizado
+          </li>
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            Alto rendimiento
+          </li>
+        </ul>
+        <div class="text-2xl font-bold text-primary-600 mb-4">Desde $2,500</div>
+      </Card>
+      
+      <!-- Mobile Development -->
+      <Card variant="hover" class="p-8 text-center group">
+        <div class="w-16 h-16 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+          <Icon name="smartphone" size="32" class="text-white" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Apps Móviles</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Aplicaciones nativas e híbridas para iOS y Android con experiencias de usuario excepcionales.
+        </p>
+        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            Multiplataforma
+          </li>
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            UI/UX nativo
+          </li>
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            Integraciones API
+          </li>
+        </ul>
+        <div class="text-2xl font-bold text-secondary-600 mb-4">Desde $5,000</div>
+      </Card>
+      
+      <!-- IT Consulting -->
+      <Card variant="hover" class="p-8 text-center group">
+        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+          <Icon name="users" size="32" class="text-white" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Consultoría IT</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Asesoría especializada para optimizar tus procesos tecnológicos y estrategias digitales.
+        </p>
+        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            Auditoría tecnológica
+          </li>
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            Estrategia digital
+          </li>
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            Optimización de procesos
+          </li>
+        </ul>
+        <div class="text-2xl font-bold text-purple-600 mb-4">Desde $1,500</div>
+      </Card>
+      
+      <!-- E-commerce -->
+      <Card variant="hover" class="p-8 text-center group">
+        <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+          <Icon name="shopping-cart" size="32" class="text-white" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">E-commerce</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Tiendas online completas con sistemas de pago, inventario y gestión de pedidos integrados.
+        </p>
+        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            Pasarelas de pago
+          </li>
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            Gestión de inventario
+          </li>
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            Panel administrativo
+          </li>
+        </ul>
+        <div class="text-2xl font-bold text-orange-600 mb-4">Desde $4,000</div>
+      </Card>
+      
+      <!-- Cloud Solutions -->
+      <Card variant="hover" class="p-8 text-center group">
+        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+          <Icon name="cloud" size="32" class="text-white" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Soluciones Cloud</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Migración y optimización de infraestructura en la nube para mayor escalabilidad y seguridad.
+        </p>
+        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            AWS / Azure / GCP
+          </li>
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            DevOps / CI/CD
+          </li>
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            Monitoreo 24/7
+          </li>
+        </ul>
+        <div class="text-2xl font-bold text-blue-600 mb-4">Desde $3,000</div>
+      </Card>
+      
+      <!-- Maintenance -->
+      <Card variant="hover" class="p-8 text-center group">
+        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+          <Icon name="settings" size="32" class="text-white" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Mantenimiento</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Soporte continuo, actualizaciones de seguridad y optimización de rendimiento para tus sistemas.
+        </p>
+        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            Soporte 24/7
+          </li>
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            Actualizaciones
+          </li>
+          <li class="flex items-center">
+            <Icon name="check" size="16" class="text-green-500 mr-2" />
+            Backups automáticos
+          </li>
+        </ul>
+        <div class="text-2xl font-bold text-green-600 mb-4">Desde $800/mes</div>
+      </Card>
+    </div>
+    
+    <!-- CTA Section -->
+    <div class="text-center">
+      <div class="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-100">
+        <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          ¿No encuentras lo que buscas?
+        </h3>
+        <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+          Creamos soluciones personalizadas para cada necesidad. Contáctanos y conversemos sobre tu proyecto.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="primary" size="lg" href="#contacto">
+            <Icon name="message-circle" size="20" class="mr-2" />
+            Consulta Personalizada
+          </Button>
+          <Button variant="outline" size="lg" href="#proyectos">
+            <Icon name="eye" size="20" class="mr-2" />
+            Ver Casos de Éxito
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

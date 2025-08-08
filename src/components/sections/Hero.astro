@@ -1,0 +1,122 @@
+---
+import Button from '../ui/Button.astro';
+import Icon from '../ui/Icon.astro';
+---
+
+<section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-blue-50">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute -top-40 -right-40 w-80 h-80 bg-primary-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+    <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+    <div class="absolute top-40 left-40 w-80 h-80 bg-purple-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+  </div>
+  
+  <!-- Grid Pattern -->
+  <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+  
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="text-center max-w-4xl mx-auto">
+      <!-- Badge -->
+      <div class="inline-flex items-center px-4 py-2 bg-primary-50 border border-primary-200 rounded-full text-primary-700 text-sm font-medium mb-8 animate-fade-in">
+        <Icon name="sparkles" size="16" class="mr-2" />
+        Soluciones Tecnológicas Innovadoras
+      </div>
+      
+      <!-- Main Heading -->
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 animate-slide-up">
+        Transformamos
+        <span class="text-gradient bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+          Ideas
+        </span>
+        en
+        <span class="text-gradient bg-gradient-to-r from-secondary-600 to-primary-600 bg-clip-text text-transparent">
+          Realidad Digital
+        </span>
+      </h1>
+      
+      <!-- Subtitle -->
+      <p class="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed animate-slide-up animation-delay-200">
+        Desarrollamos soluciones web y móviles personalizadas que impulsan el crecimiento de tu negocio con tecnología de vanguardia.
+      </p>
+      
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-slide-up animation-delay-400">
+        <Button variant="primary" size="lg" href="#contacto" class="group">
+          <Icon name="rocket" size="20" class="mr-2 group-hover:animate-bounce" />
+          Empezar Mi Proyecto
+        </Button>
+        <Button variant="outline" size="lg" href="#servicios" class="group">
+          <Icon name="play" size="20" class="mr-2 group-hover:scale-110 transition-transform" />
+          Ver Nuestros Servicios
+        </Button>
+      </div>
+      
+      <!-- Trust Indicators -->
+      <div class="animate-fade-in animation-delay-600">
+        <p class="text-sm text-gray-500 mb-8">Confían en nosotros</p>
+        <div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
+          <!-- Company Logos Placeholder -->
+          <div class="flex items-center space-x-2 text-gray-400">
+            <Icon name="building" size="24" />
+            <span class="font-semibold">TechCorp</span>
+          </div>
+          <div class="flex items-center space-x-2 text-gray-400">
+            <Icon name="building" size="24" />
+            <span class="font-semibold">InnovateLab</span>
+          </div>
+          <div class="flex items-center space-x-2 text-gray-400">
+            <Icon name="building" size="24" />
+            <span class="font-semibold">FutureStart</span>
+          </div>
+          <div class="flex items-center space-x-2 text-gray-400">
+            <Icon name="building" size="24" />
+            <span class="font-semibold">DigitalFlow</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <div class="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center">
+      <div class="w-1 h-3 bg-gray-300 rounded-full mt-2 animate-pulse"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+  
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+</style>

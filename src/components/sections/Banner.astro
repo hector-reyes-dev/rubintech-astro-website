@@ -1,0 +1,81 @@
+---
+import Icon from '../ui/Icon.astro';
+---
+
+<section class="py-16 bg-white border-y border-gray-100">
+  <div class="container mx-auto px-4">
+    <!-- Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+      <div class="text-center animate-fade-in">
+        <div class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">50+</div>
+        <div class="text-gray-600 text-sm md:text-base">Proyectos Completados</div>
+      </div>
+      <div class="text-center animate-fade-in animation-delay-100">
+        <div class="text-3xl md:text-4xl font-bold text-secondary-600 mb-2">98%</div>
+        <div class="text-gray-600 text-sm md:text-base">Satisfacción del Cliente</div>
+      </div>
+      <div class="text-center animate-fade-in animation-delay-200">
+        <div class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">24/7</div>
+        <div class="text-gray-600 text-sm md:text-base">Soporte Técnico</div>
+      </div>
+      <div class="text-center animate-fade-in animation-delay-300">
+        <div class="text-3xl md:text-4xl font-bold text-secondary-600 mb-2">5+</div>
+        <div class="text-gray-600 text-sm md:text-base">Años de Experiencia</div>
+      </div>
+    </div>
+    
+    <!-- Technologies -->
+    <div class="text-center">
+      <h3 class="text-lg font-semibold text-gray-900 mb-8">Tecnologías que Dominamos</h3>
+      <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+        <!-- Frontend -->
+        <div class="flex items-center space-x-2 px-4 py-2 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <Icon name="code" size="20" class="text-blue-600" />
+          <span class="text-gray-700 font-medium">React</span>
+        </div>
+        <div class="flex items-center space-x-2 px-4 py-2 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <Icon name="code" size="20" class="text-green-600" />
+          <span class="text-gray-700 font-medium">Vue.js</span>
+        </div>
+        <div class="flex items-center space-x-2 px-4 py-2 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <Icon name="code" size="20" class="text-red-600" />
+          <span class="text-gray-700 font-medium">Angular</span>
+        </div>
+        
+        <!-- Backend -->
+        <div class="flex items-center space-x-2 px-4 py-2 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <Icon name="server" size="20" class="text-green-700" />
+          <span class="text-gray-700 font-medium">Node.js</span>
+        </div>
+        <div class="flex items-center space-x-2 px-4 py-2 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <Icon name="server" size="20" class="text-blue-700" />
+          <span class="text-gray-700 font-medium">Python</span>
+        </div>
+        <div class="flex items-center space-x-2 px-4 py-2 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <Icon name="server" size="20" class="text-purple-600" />
+          <span class="text-gray-700 font-medium">.NET</span>
+        </div>
+        
+        <!-- Mobile -->
+        <div class="flex items-center space-x-2 px-4 py-2 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <Icon name="smartphone" size="20" class="text-blue-500" />
+          <span class="text-gray-700 font-medium">React Native</span>
+        </div>
+        <div class="flex items-center space-x-2 px-4 py-2 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <Icon name="smartphone" size="20" class="text-blue-400" />
+          <span class="text-gray-700 font-medium">Flutter</span>
+        </div>
+        
+        <!-- Cloud -->
+        <div class="flex items-center space-x-2 px-4 py-2 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <Icon name="cloud" size="20" class="text-orange-500" />
+          <span class="text-gray-700 font-medium">AWS</span>
+        </div>
+        <div class="flex items-center space-x-2 px-4 py-2 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <Icon name="cloud" size="20" class="text-blue-600" />
+          <span class="text-gray-700 font-medium">Azure</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
