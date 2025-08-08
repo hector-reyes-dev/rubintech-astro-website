@@ -1,29 +1,55 @@
-# Astro Starter Kit: Minimal
+# 🚀 Rubin Tech - Sitio Web Corporativo
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Sitio web corporativo moderno para Rubin Tech, desarrollado con **Astro** y **Tailwind CSS**. Transformamos desafíos en oportunidades tecnológicas con soluciones personalizadas.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## ✨ Características
 
-## 🚀 Project Structure
+- 🎨 **Diseño Moderno**: UI/UX profesional con gradientes y animaciones suaves
+- 📱 **Responsive Design**: Optimizado para todos los dispositivos
+- ⚡ **Alto Rendimiento**: Construido con Astro para máxima velocidad
+- 🎯 **SEO Optimizado**: Meta tags, Open Graph y Twitter Cards
+- 🔧 **TypeScript**: Desarrollo type-safe
+- 🎨 **Tailwind CSS**: Sistema de diseño escalable
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🏗️ Estructura del Proyecto
 
 ```text
 /
 ├── public/
+│   └── favicon.svg
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/
+│   │   ├── layout/          # Header, Footer, Layout
+│   │   ├── sections/        # Hero, Services, Projects, etc.
+│   │   └── ui/             # Button, Card, Icon
+│   ├── pages/
+│   │   └── index.astro     # Página principal
+│   └── styles/
+│       └── global.css      # Estilos globales y variables
+├── astro.config.mjs        # Configuración de Astro
+├── tailwind.config.mjs     # Configuración de Tailwind
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🎨 Componentes Principales
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Layout
+- **Header**: Navegación responsive con menú móvil
+- **Footer**: Enlaces organizados y información de contacto
+- **Layout**: Estructura base con SEO optimizado
 
-Any static assets, like images, can be placed in the `public/` directory.
+### Secciones
+- **Hero**: Sección principal con CTA y elementos visuales
+- **Banner**: Indicadores de confianza y estadísticas
+- **Services**: Grid de servicios con iconos y características
+- **Projects**: Casos de estudio y portfolio
+- **Testimonials**: Reseñas de clientes y métricas
+- **CTA**: Llamada a la acción final
+
+### UI Components
+- **Button**: Botón reutilizable con variantes y tamaños
+- **Card**: Tarjetas con diferentes estilos
+- **Icon**: Sistema de iconos SVG
 
 ## 🧞 Commands
 
