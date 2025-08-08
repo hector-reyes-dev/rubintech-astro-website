@@ -1,0 +1,319 @@
+---
+import Card from '../ui/Card.astro';
+import Icon from '../ui/Icon.astro';
+---
+
+<section id="testimonios" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        Lo que dicen nuestros
+        <span class="text-gradient bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+          Clientes
+        </span>
+      </h2>
+      <p class="text-xl text-gray-600 leading-relaxed">
+        La satisfacción de nuestros clientes es nuestra mayor motivación. Descubre sus experiencias trabajando con nosotros.
+      </p>
+    </div>
+    
+    <!-- Testimonials Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <!-- Testimonial 1 -->
+      <Card variant="default" class="p-8 relative">
+        <div class="absolute top-4 right-4 text-primary-200">
+          <Icon name="quote" size="32" />
+        </div>
+        
+        <!-- Rating -->
+        <div class="flex items-center mb-4">
+          <div class="flex space-x-1 mr-2">
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+          </div>
+          <span class="text-sm text-gray-500">5.0</span>
+        </div>
+        
+        <!-- Testimonial Text -->
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          "Rubin Tech transformó completamente nuestra presencia digital. El equipo es profesional, creativo y siempre cumple con los plazos. Nuestras ventas online aumentaron un 300% en solo 6 meses."
+        </p>
+        
+        <!-- Author -->
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold text-lg">MC</span>
+          </div>
+          <div>
+            <div class="font-semibold text-gray-900">María Castillo</div>
+            <div class="text-sm text-gray-500">CEO, TechStore</div>
+          </div>
+        </div>
+        
+        <!-- Key Result -->
+        <div class="mt-6 p-3 bg-green-50 rounded-lg border border-green-200">
+          <div class="text-sm text-green-800 font-medium">Resultado clave:</div>
+          <div class="text-lg font-bold text-green-600">+300% en ventas online</div>
+        </div>
+      </Card>
+      
+      <!-- Testimonial 2 -->
+      <Card variant="default" class="p-8 relative">
+        <div class="absolute top-4 right-4 text-primary-200">
+          <Icon name="quote" size="32" />
+        </div>
+        
+        <!-- Rating -->
+        <div class="flex items-center mb-4">
+          <div class="flex space-x-1 mr-2">
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+          </div>
+          <span class="text-sm text-gray-500">5.0</span>
+        </div>
+        
+        <!-- Testimonial Text -->
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          "La aplicación móvil que desarrollaron superó todas nuestras expectativas. La interfaz es intuitiva, rápida y nuestros usuarios la adoran. El soporte post-lanzamiento ha sido excepcional."
+        </p>
+        
+        <!-- Author -->
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-600 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold text-lg">JR</span>
+          </div>
+          <div>
+            <div class="font-semibold text-gray-900">Javier Rodríguez</div>
+            <div class="text-sm text-gray-500">CTO, FinanceApp</div>
+          </div>
+        </div>
+        
+        <!-- Key Result -->
+        <div class="mt-6 p-3 bg-blue-50 rounded-lg border border-blue-200">
+          <div class="text-sm text-blue-800 font-medium">Resultado clave:</div>
+          <div class="text-lg font-bold text-blue-600">100K+ descargas en 3 meses</div>
+        </div>
+      </Card>
+      
+      <!-- Testimonial 3 -->
+      <Card variant="default" class="p-8 relative">
+        <div class="absolute top-4 right-4 text-primary-200">
+          <Icon name="quote" size="32" />
+        </div>
+        
+        <!-- Rating -->
+        <div class="flex items-center mb-4">
+          <div class="flex space-x-1 mr-2">
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+          </div>
+          <span class="text-sm text-gray-500">5.0</span>
+        </div>
+        
+        <!-- Testimonial Text -->
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          "Trabajar con Rubin Tech fue una experiencia increíble. No solo entregaron un sistema robusto y escalable, sino que también nos asesoraron en la estrategia digital. Son verdaderos socios tecnológicos."
+        </p>
+        
+        <!-- Author -->
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold text-lg">AL</span>
+          </div>
+          <div>
+            <div class="font-semibold text-gray-900">Ana López</div>
+            <div class="text-sm text-gray-500">Directora, HRPro</div>
+          </div>
+        </div>
+        
+        <!-- Key Result -->
+        <div class="mt-6 p-3 bg-purple-50 rounded-lg border border-purple-200">
+          <div class="text-sm text-purple-800 font-medium">Resultado clave:</div>
+          <div class="text-lg font-bold text-purple-600">80% reducción en tiempo</div>
+        </div>
+      </Card>
+      
+      <!-- Testimonial 4 -->
+      <Card variant="default" class="p-8 relative">
+        <div class="absolute top-4 right-4 text-primary-200">
+          <Icon name="quote" size="32" />
+        </div>
+        
+        <!-- Rating -->
+        <div class="flex items-center mb-4">
+          <div class="flex space-x-1 mr-2">
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+          </div>
+          <span class="text-sm text-gray-500">5.0</span>
+        </div>
+        
+        <!-- Testimonial Text -->
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          "La plataforma logística que desarrollaron revolucionó nuestras operaciones. El seguimiento en tiempo real y la optimización de rutas nos ahorraron miles de dólares mensuales."
+        </p>
+        
+        <!-- Author -->
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold text-lg">CM</span>
+          </div>
+          <div>
+            <div class="font-semibold text-gray-900">Carlos Mendoza</div>
+            <div class="text-sm text-gray-500">Gerente, LogiTrack</div>
+          </div>
+        </div>
+        
+        <!-- Key Result -->
+        <div class="mt-6 p-3 bg-orange-50 rounded-lg border border-orange-200">
+          <div class="text-sm text-orange-800 font-medium">Resultado clave:</div>
+          <div class="text-lg font-bold text-orange-600">40% reducción en costos</div>
+        </div>
+      </Card>
+      
+      <!-- Testimonial 5 -->
+      <Card variant="default" class="p-8 relative">
+        <div class="absolute top-4 right-4 text-primary-200">
+          <Icon name="quote" size="32" />
+        </div>
+        
+        <!-- Rating -->
+        <div class="flex items-center mb-4">
+          <div class="flex space-x-1 mr-2">
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+          </div>
+          <span class="text-sm text-gray-500">5.0</span>
+        </div>
+        
+        <!-- Testimonial Text -->
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          "Desde el primer día, el equipo demostró un profundo entendimiento de nuestro negocio. La solución que crearon es exactamente lo que necesitábamos para escalar."
+        </p>
+        
+        <!-- Author -->
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold text-lg">LS</span>
+          </div>
+          <div>
+            <div class="font-semibold text-gray-900">Laura Sánchez</div>
+            <div class="text-sm text-gray-500">Fundadora, EduTech</div>
+          </div>
+        </div>
+        
+        <!-- Key Result -->
+        <div class="mt-6 p-3 bg-indigo-50 rounded-lg border border-indigo-200">
+          <div class="text-sm text-indigo-800 font-medium">Resultado clave:</div>
+          <div class="text-lg font-bold text-indigo-600">500% crecimiento usuarios</div>
+        </div>
+      </Card>
+      
+      <!-- Testimonial 6 -->
+      <Card variant="default" class="p-8 relative">
+        <div class="absolute top-4 right-4 text-primary-200">
+          <Icon name="quote" size="32" />
+        </div>
+        
+        <!-- Rating -->
+        <div class="flex items-center mb-4">
+          <div class="flex space-x-1 mr-2">
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+            <Icon name="star" size="16" class="text-yellow-400 fill-current" />
+          </div>
+          <span class="text-sm text-gray-500">5.0</span>
+        </div>
+        
+        <!-- Testimonial Text -->
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          "La migración a la nube que realizaron fue impecable. Cero tiempo de inactividad y un aumento significativo en el rendimiento. Su experiencia en DevOps es excepcional."
+        </p>
+        
+        <!-- Author -->
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-green-600 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold text-lg">DP</span>
+          </div>
+          <div>
+            <div class="font-semibold text-gray-900">Diego Paredes</div>
+            <div class="text-sm text-gray-500">IT Manager, RetailPlus</div>
+          </div>
+        </div>
+        
+        <!-- Key Result -->
+        <div class="mt-6 p-3 bg-teal-50 rounded-lg border border-teal-200">
+          <div class="text-sm text-teal-800 font-medium">Resultado clave:</div>
+          <div class="text-lg font-bold text-teal-600">99.9% uptime garantizado</div>
+        </div>
+      </Card>
+    </div>
+    
+    <!-- Trust Indicators -->
+    <div class="text-center">
+      <div class="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-100">
+        <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
+          Confían en Nosotros
+        </h3>
+        
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary-600 mb-2">98%</div>
+            <div class="text-gray-600 text-sm">Satisfacción del Cliente</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-secondary-600 mb-2">50+</div>
+            <div class="text-gray-600 text-sm">Proyectos Exitosos</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-purple-600 mb-2">5+</div>
+            <div class="text-gray-600 text-sm">Años de Experiencia</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-orange-600 mb-2">24/7</div>
+            <div class="text-gray-600 text-sm">Soporte Técnico</div>
+          </div>
+        </div>
+        
+        <!-- Certifications -->
+        <div class="flex flex-wrap justify-center items-center gap-6 text-gray-400">
+          <div class="flex items-center space-x-2">
+            <Icon name="shield" size="20" />
+            <span class="text-sm font-medium">ISO 27001</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <Icon name="award" size="20" />
+            <span class="text-sm font-medium">AWS Certified</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <Icon name="star" size="20" />
+            <span class="text-sm font-medium">Google Partner</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <Icon name="check-circle" size="20" />
+            <span class="text-sm font-medium">Microsoft Partner</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

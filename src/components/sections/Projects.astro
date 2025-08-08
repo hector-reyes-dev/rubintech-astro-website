@@ -1,0 +1,267 @@
+---
+import Card from '../ui/Card.astro';
+import Icon from '../ui/Icon.astro';
+import Button from '../ui/Button.astro';
+---
+
+<section id="proyectos" class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        Casos de
+        <span class="text-gradient bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+          Éxito
+        </span>
+      </h2>
+      <p class="text-xl text-gray-600 leading-relaxed">
+        Descubre cómo hemos ayudado a empresas como la tuya a alcanzar sus objetivos digitales.
+      </p>
+    </div>
+    
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+      <!-- Project 1 -->
+      <Card variant="hover" class="overflow-hidden group">
+        <div class="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 relative overflow-hidden">
+          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-white text-center">
+              <Icon name="shopping-cart" size="48" class="mx-auto mb-4 opacity-80" />
+              <h4 class="text-xl font-bold">E-commerce Platform</h4>
+            </div>
+          </div>
+        </div>
+        <div class="p-8">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">E-commerce</span>
+            <div class="flex items-center text-gray-500 text-sm">
+              <Icon name="calendar" size="16" class="mr-1" />
+              2024
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">TechStore - Plataforma E-commerce</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Desarrollo completo de una plataforma e-commerce con múltiples vendedores, sistema de pagos integrado y panel administrativo avanzado.
+          </p>
+          
+          <!-- Technologies -->
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">React</span>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Node.js</span>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">MongoDB</span>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Stripe</span>
+          </div>
+          
+          <!-- Results -->
+          <div class="grid grid-cols-3 gap-4 mb-6 p-4 bg-gray-50 rounded-lg">
+            <div class="text-center">
+              <div class="text-lg font-bold text-primary-600">300%</div>
+              <div class="text-xs text-gray-600">Aumento en ventas</div>
+            </div>
+            <div class="text-center">
+              <div class="text-lg font-bold text-secondary-600">50K+</div>
+              <div class="text-xs text-gray-600">Usuarios activos</div>
+            </div>
+            <div class="text-center">
+              <div class="text-lg font-bold text-purple-600">99.9%</div>
+              <div class="text-xs text-gray-600">Uptime</div>
+            </div>
+          </div>
+          
+          <Button variant="outline" size="sm" href="#contacto" class="w-full">
+            <Icon name="external-link" size="16" class="mr-2" />
+            Ver Caso Completo
+          </Button>
+        </div>
+      </Card>
+      
+      <!-- Project 2 -->
+      <Card variant="hover" class="overflow-hidden group">
+        <div class="aspect-video bg-gradient-to-br from-green-500 to-blue-600 relative overflow-hidden">
+          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-white text-center">
+              <Icon name="smartphone" size="48" class="mx-auto mb-4 opacity-80" />
+              <h4 class="text-xl font-bold">Mobile Banking App</h4>
+            </div>
+          </div>
+        </div>
+        <div class="p-8">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">Fintech</span>
+            <div class="flex items-center text-gray-500 text-sm">
+              <Icon name="calendar" size="16" class="mr-1" />
+              2024
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">FinanceApp - Banca Móvil</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Aplicación móvil segura para banca digital con autenticación biométrica, transferencias instantáneas y gestión de inversiones.
+          </p>
+          
+          <!-- Technologies -->
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">React Native</span>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Python</span>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">PostgreSQL</span>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">AWS</span>
+          </div>
+          
+          <!-- Results -->
+          <div class="grid grid-cols-3 gap-4 mb-6 p-4 bg-gray-50 rounded-lg">
+            <div class="text-center">
+              <div class="text-lg font-bold text-primary-600">100K+</div>
+              <div class="text-xs text-gray-600">Descargas</div>
+            </div>
+            <div class="text-center">
+              <div class="text-lg font-bold text-secondary-600">4.8</div>
+              <div class="text-xs text-gray-600">Rating App Store</div>
+            </div>
+            <div class="text-center">
+              <div class="text-lg font-bold text-green-600">$2M+</div>
+              <div class="text-xs text-gray-600">Transacciones</div>
+            </div>
+          </div>
+          
+          <Button variant="outline" size="sm" href="#contacto" class="w-full">
+            <Icon name="external-link" size="16" class="mr-2" />
+            Ver Caso Completo
+          </Button>
+        </div>
+      </Card>
+      
+      <!-- Project 3 -->
+      <Card variant="hover" class="overflow-hidden group">
+        <div class="aspect-video bg-gradient-to-br from-purple-500 to-pink-600 relative overflow-hidden">
+          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-white text-center">
+              <Icon name="users" size="48" class="mx-auto mb-4 opacity-80" />
+              <h4 class="text-xl font-bold">HR Management System</h4>
+            </div>
+          </div>
+        </div>
+        <div class="p-8">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm font-medium rounded-full">SaaS</span>
+            <div class="flex items-center text-gray-500 text-sm">
+              <Icon name="calendar" size="16" class="mr-1" />
+              2023
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">HRPro - Gestión de RRHH</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Sistema integral de gestión de recursos humanos con módulos de reclutamiento, nómina, evaluaciones y reportes analíticos.
+          </p>
+          
+          <!-- Technologies -->
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Vue.js</span>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">.NET Core</span>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">SQL Server</span>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Azure</span>
+          </div>
+          
+          <!-- Results -->
+          <div class="grid grid-cols-3 gap-4 mb-6 p-4 bg-gray-50 rounded-lg">
+            <div class="text-center">
+              <div class="text-lg font-bold text-primary-600">80%</div>
+              <div class="text-xs text-gray-600">Reducción tiempo</div>
+            </div>
+            <div class="text-center">
+              <div class="text-lg font-bold text-secondary-600">500+</div>
+              <div class="text-xs text-gray-600">Empleados gestionados</div>
+            </div>
+            <div class="text-center">
+              <div class="text-lg font-bold text-purple-600">95%</div>
+              <div class="text-xs text-gray-600">Satisfacción usuario</div>
+            </div>
+          </div>
+          
+          <Button variant="outline" size="sm" href="#contacto" class="w-full">
+            <Icon name="external-link" size="16" class="mr-2" />
+            Ver Caso Completo
+          </Button>
+        </div>
+      </Card>
+      
+      <!-- Project 4 -->
+      <Card variant="hover" class="overflow-hidden group">
+        <div class="aspect-video bg-gradient-to-br from-orange-500 to-red-600 relative overflow-hidden">
+          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-white text-center">
+              <Icon name="truck" size="48" class="mx-auto mb-4 opacity-80" />
+              <h4 class="text-xl font-bold">Logistics Platform</h4>
+            </div>
+          </div>
+        </div>
+        <div class="p-8">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 bg-orange-100 text-orange-800 text-sm font-medium rounded-full">Logística</span>
+            <div class="flex items-center text-gray-500 text-sm">
+              <Icon name="calendar" size="16" class="mr-1" />
+              2023
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">LogiTrack - Plataforma Logística</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Sistema de gestión logística con seguimiento en tiempo real, optimización de rutas y panel de control para operadores.
+          </p>
+          
+          <!-- Technologies -->
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Angular</span>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Node.js</span>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Redis</span>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Google Maps</span>
+          </div>
+          
+          <!-- Results -->
+          <div class="grid grid-cols-3 gap-4 mb-6 p-4 bg-gray-50 rounded-lg">
+            <div class="text-center">
+              <div class="text-lg font-bold text-primary-600">40%</div>
+              <div class="text-xs text-gray-600">Reducción costos</div>
+            </div>
+            <div class="text-center">
+              <div class="text-lg font-bold text-secondary-600">1000+</div>
+              <div class="text-xs text-gray-600">Rutas optimizadas</div>
+            </div>
+            <div class="text-center">
+              <div class="text-lg font-bold text-orange-600">24/7</div>
+              <div class="text-xs text-gray-600">Monitoreo</div>
+            </div>
+          </div>
+          
+          <Button variant="outline" size="sm" href="#contacto" class="w-full">
+            <Icon name="external-link" size="16" class="mr-2" />
+            Ver Caso Completo
+          </Button>
+        </div>
+      </Card>
+    </div>
+    
+    <!-- CTA Section -->
+    <div class="text-center">
+      <div class="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8 md:p-12 border border-primary-100">
+        <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          ¿Listo para ser nuestro próximo caso de éxito?
+        </h3>
+        <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+          Cada proyecto es único. Conversemos sobre tus necesidades y creemos algo extraordinario juntos.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="primary" size="lg" href="#contacto">
+            <Icon name="rocket" size="20" class="mr-2" />
+            Empezar Mi Proyecto
+          </Button>
+          <Button variant="outline" size="lg" href="#testimonios">
+            <Icon name="star" size="20" class="mr-2" />
+            Ver Testimonios
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

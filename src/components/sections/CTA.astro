@@ -1,0 +1,135 @@
+---
+import Button from '../ui/Button.astro';
+import Icon from '../ui/Icon.astro';
+---
+
+<section id="contacto" class="py-20 bg-gradient-to-br from-primary-600 via-primary-700 to-secondary-600 text-white relative overflow-hidden">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full mix-blend-overlay filter blur-xl"></div>
+    <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-white/10 rounded-full mix-blend-overlay filter blur-xl"></div>
+  </div>
+  
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <!-- Section Header -->
+      <div class="mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          ¿Listo para
+          <span class="text-yellow-300">
+            Transformar
+          </span>
+          tu Negocio?
+        </h2>
+        <p class="text-xl text-blue-100 leading-relaxed max-w-2xl mx-auto">
+          Agenda una consulta gratuita y descubre cómo podemos llevar tu proyecto al siguiente nivel.
+        </p>
+      </div>
+      
+      <!-- Benefits Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <Icon name="calendar" size="32" class="text-yellow-300" />
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Consulta Gratuita</h3>
+          <p class="text-blue-100 text-sm">30 minutos para entender tu proyecto y objetivos</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <Icon name="lightbulb" size="32" class="text-yellow-300" />
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Propuesta Personalizada</h3>
+          <p class="text-blue-100 text-sm">Solución diseñada específicamente para ti</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <Icon name="rocket" size="32" class="text-yellow-300" />
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Inicio Rápido</h3>
+          <p class="text-blue-100 text-sm">Comenzamos tu proyecto en menos de una semana</p>
+        </div>
+      </div>
+      
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+        <Button 
+          variant="secondary" 
+          size="lg" 
+          href="https://calendly.com/rubintech/consulta" 
+          class="bg-white text-primary-600 hover:bg-gray-100 shadow-lg group"
+        >
+          <Icon name="calendar" size="20" class="mr-2 group-hover:scale-110 transition-transform" />
+          Agendar Consulta Gratis
+        </Button>
+        <Button 
+          variant="outline" 
+          size="lg" 
+          href="mailto:contacto@rubintech.com" 
+          class="border-white text-white hover:bg-white hover:text-primary-600 group"
+        >
+          <Icon name="mail" size="20" class="mr-2 group-hover:scale-110 transition-transform" />
+          Enviar Email
+        </Button>
+      </div>
+      
+      <!-- Contact Information -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div class="text-center">
+          <div class="flex items-center justify-center mb-2">
+            <Icon name="phone" size="20" class="mr-2 text-yellow-300" />
+            <span class="font-medium">Teléfono</span>
+          </div>
+          <a href="tel:+525551234567" class="text-blue-100 hover:text-white transition-colors">
+            +52 555 123 4567
+          </a>
+        </div>
+        
+        <div class="text-center">
+          <div class="flex items-center justify-center mb-2">
+            <Icon name="mail" size="20" class="mr-2 text-yellow-300" />
+            <span class="font-medium">Email</span>
+          </div>
+          <a href="mailto:contacto@rubintech.com" class="text-blue-100 hover:text-white transition-colors">
+            contacto@rubintech.com
+          </a>
+        </div>
+        
+        <div class="text-center">
+          <div class="flex items-center justify-center mb-2">
+            <Icon name="location" size="20" class="mr-2 text-yellow-300" />
+            <span class="font-medium">Ubicación</span>
+          </div>
+          <span class="text-blue-100">
+            Ciudad de México, México
+          </span>
+        </div>
+      </div>
+      
+      <!-- Trust Badges -->
+      <div class="border-t border-white/20 pt-8">
+        <p class="text-sm text-blue-100 mb-6">Confían en nosotros</p>
+        <div class="flex flex-wrap justify-center items-center gap-8 opacity-80">
+          <div class="flex items-center space-x-2">
+            <Icon name="shield" size="20" class="text-yellow-300" />
+            <span class="text-sm font-medium">Datos Seguros</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <Icon name="clock" size="20" class="text-yellow-300" />
+            <span class="text-sm font-medium">Respuesta en 24h</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <Icon name="award" size="20" class="text-yellow-300" />
+            <span class="text-sm font-medium">5+ Años Experiencia</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <Icon name="users" size="20" class="text-yellow-300" />
+            <span class="text-sm font-medium">50+ Clientes Satisfechos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
