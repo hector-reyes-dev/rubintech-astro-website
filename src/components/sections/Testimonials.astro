@@ -1,0 +1,155 @@
+---
+import Card from '../ui/Card.astro';
+import Icon from '../ui/Icon.astro';
+
+const testimonials = [
+  {
+    name: 'María González',
+    position: 'Directora de Operaciones',
+    company: 'TechCorp Solutions',
+    avatar: 'MG',
+    rating: 5,
+    testimonial: 'Rubin Tech transformó completamente nuestros procesos digitales. Su enfoque profesional y soluciones innovadoras superaron nuestras expectativas. El ROI fue evidente desde el primer mes.',
+    results: 'Incremento del 40% en productividad'
+  },
+  {
+    name: 'Carlos Mendoza',
+    position: 'CEO',
+    company: 'Innovate Plus',
+    avatar: 'CM',
+    rating: 5,
+    testimonial: 'La plataforma e-commerce que desarrollaron revolucionó nuestras ventas online. El equipo demostró un profundo entendimiento de nuestro negocio y entregó una solución que excedió nuestros objetivos.',
+    results: 'Crecimiento del 300% en ventas online'
+  },
+  {
+    name: 'Ana Rodríguez',
+    position: 'Gerente de TI',
+    company: 'Digital Dynamics',
+    avatar: 'AR',
+    rating: 5,
+    testimonial: 'Su expertise en automatización nos permitió eliminar procesos manuales que consumían horas de trabajo. La implementación fue fluida y el soporte post-lanzamiento excepcional.',
+    results: 'Reducción del 60% en tiempo de procesos'
+  },
+  {
+    name: 'Roberto Silva',
+    position: 'Fundador',
+    company: 'StartUp Ventures',
+    avatar: 'RS',
+    rating: 5,
+    testimonial: 'Como startup, necesitábamos un socio tecnológico que entendiera nuestras limitaciones y objetivos. Rubin Tech nos proporcionó exactamente eso, con soluciones escalables y costo-efectivas.',
+    results: 'Lanzamiento exitoso en 3 meses'
+  },
+  {
+    name: 'Laura Jiménez',
+    position: 'Directora de Marketing',
+    company: 'Growth Agency',
+    avatar: 'LJ',
+    rating: 5,
+    testimonial: 'El sitio web que crearon no solo es visualmente impresionante, sino que también está optimizado para conversión. Nuestras métricas de engagement mejoraron significativamente.',
+    results: 'Aumento del 85% en conversiones'
+  },
+  {
+    name: 'Diego Morales',
+    position: 'CTO',
+    company: 'Tech Innovations',
+    avatar: 'DM',
+    rating: 5,
+    testimonial: 'Su capacidad para integrar sistemas complejos y crear arquitecturas robustas es impresionante. El proyecto se entregó a tiempo y dentro del presupuesto, con calidad excepcional.',
+    results: 'Integración exitosa de 5 sistemas'
+  }
+];
+---
+
+<section class="bg-gray-50 py-20 lg:py-32">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium mb-6">
+        <Icon name="star" size="sm" class="mr-2" />
+        Testimonios de Clientes
+      </div>
+      
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        Confían que 
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-500">
+          quienes transformamos
+        </span>
+      </h2>
+      
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Descubre por qué empresas de diferentes industrias eligen Rubin Tech como su 
+        socio estratégico en transformación digital.
+      </p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      {testimonials.map((testimonial, index) => (
+        <Card variant="testimonial" hover={true} class="group">
+          <div class="p-6">
+            <!-- Rating -->
+            <div class="flex items-center space-x-1 mb-4">
+              {[...Array(testimonial.rating)].map((_, i) => (
+                <Icon name="star" size="sm" class="text-yellow-400" />
+              ))}
+            </div>
+            
+            <!-- Testimonial Text -->
+            <blockquote class="text-gray-700 leading-relaxed mb-6 italic">
+              "{testimonial.testimonial}"
+            </blockquote>
+            
+            <!-- Results Badge -->
+            <div class="inline-flex items-center px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium mb-6">
+              <Icon name="trending-up" size="sm" class="mr-1" />
+              {testimonial.results}
+            </div>
+            
+            <!-- Author Info -->
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+                <span class="text-white font-semibold text-sm">{testimonial.avatar}</span>
+              </div>
+              <div>
+                <div class="font-semibold text-gray-900">{testimonial.name}</div>
+                <div class="text-sm text-gray-600">{testimonial.position}</div>
+                <div class="text-sm text-primary font-medium">{testimonial.company}</div>
+              </div>
+            </div>
+          </div>
+        </Card>
+      ))}
+    </div>
+
+    <!-- Trust Indicators -->
+    <div class="bg-white rounded-2xl p-8 lg:p-12">
+      <div class="text-center mb-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">
+          Números que respaldan nuestra excelencia
+        </h3>
+        <p class="text-gray-600">
+          Métricas reales de satisfacción y resultados de nuestros clientes
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-3xl lg:text-4xl font-bold text-primary mb-2">98%</div>
+          <div class="text-sm text-gray-600">Satisfacción del Cliente</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl lg:text-4xl font-bold text-green-600 mb-2">50+</div>
+          <div class="text-sm text-gray-600">Proyectos Exitosos</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">24/7</div>
+          <div class="text-sm text-gray-600">Soporte Técnico</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl lg:text-4xl font-bold text-purple-600 mb-2">5+</div>
+          <div class="text-sm text-gray-600">Años de Experiencia</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

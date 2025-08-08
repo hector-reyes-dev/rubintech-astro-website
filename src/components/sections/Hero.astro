@@ -1,0 +1,134 @@
+---
+import Button from '../ui/Button.astro';
+import Icon from '../ui/Icon.astro';
+---
+
+<section class="relative bg-gradient-to-br from-gray-50 to-white overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+  
+  <!-- Hero Content -->
+  <div class="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <!-- Left Column - Content -->
+      <div class="text-center lg:text-left">
+        <!-- Badge -->
+        <div class="inline-flex items-center px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
+          <Icon name="star" size="sm" class="mr-2" />
+          Soluciones Tecnológicas Innovadoras
+        </div>
+        
+        <!-- Main Heading -->
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+          Transformamos 
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-light">
+            desafíos
+          </span> en 
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-secondary">
+            oportunidades tecnológicas
+          </span>
+        </h1>
+        
+        <!-- Subtitle -->
+        <p class="text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl">
+          Creamos soluciones digitales que eliminan barreras, optimizan procesos y crean oportunidades. 
+          Tu socio estratégico en transformación digital.
+        </p>
+        
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+          <Button variant="primary" size="lg" href="#servicios">
+            Explorar Servicios
+          </Button>
+          <Button variant="outline" size="lg" href="#contacto">
+            Obtener Cotización
+          </Button>
+        </div>
+        
+        <!-- Trust Indicators -->
+        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 text-sm text-gray-500">
+          <div class="flex items-center">
+            <Icon name="check" size="sm" class="text-green-500 mr-2" />
+            <span>Proyectos Entregados: 50+</span>
+          </div>
+          <div class="flex items-center">
+            <Icon name="star" size="sm" class="text-yellow-500 mr-2" />
+            <span>Satisfacción: 98%</span>
+          </div>
+          <div class="flex items-center">
+            <Icon name="clock" size="sm" class="text-blue-500 mr-2" />
+            <span>Soporte 24/7</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Column - Visual -->
+      <div class="relative">
+        <!-- Main Image Container -->
+        <div class="relative bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8 lg:p-12">
+          <!-- Floating Cards -->
+          <div class="relative">
+            <!-- Code Card -->
+            <div class="absolute -top-4 -left-4 bg-white rounded-lg shadow-lg p-4 transform rotate-3 hover:rotate-0 transition-transform duration-300">
+              <div class="flex items-center space-x-2 mb-2">
+                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+              </div>
+              <div class="space-y-1">
+                <div class="h-2 bg-gray-200 rounded w-16"></div>
+                <div class="h-2 bg-primary/30 rounded w-12"></div>
+                <div class="h-2 bg-gray-200 rounded w-14"></div>
+              </div>
+            </div>
+            
+            <!-- Analytics Card -->
+            <div class="absolute -top-2 -right-6 bg-white rounded-lg shadow-lg p-4 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
+              <div class="flex items-center space-x-2 mb-2">
+                <Icon name="trending-up" size="sm" class="text-green-500" />
+                <span class="text-xs font-medium text-gray-700">Analytics</span>
+              </div>
+              <div class="text-2xl font-bold text-gray-900">+127%</div>
+              <div class="text-xs text-gray-500">Growth</div>
+            </div>
+            
+            <!-- Mobile App Card -->
+            <div class="absolute -bottom-6 -left-2 bg-white rounded-lg shadow-lg p-3 transform rotate-6 hover:rotate-0 transition-transform duration-300">
+              <div class="w-12 h-20 bg-gradient-to-b from-primary to-primary-light rounded-lg flex items-center justify-center">
+                <Icon name="smartphone" size="sm" class="text-white" />
+              </div>
+            </div>
+            
+            <!-- Central Illustration -->
+            <div class="w-full h-64 lg:h-80 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <Icon name="code" size="lg" class="text-white" />
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Desarrollo Ágil</h3>
+                <p class="text-sm text-gray-600">Metodologías modernas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Background Decorations -->
+        <div class="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full blur-3xl"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <Icon name="chevron-down" size="md" class="text-gray-400" />
+  </div>
+</section>
+
+<style>
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+</style>

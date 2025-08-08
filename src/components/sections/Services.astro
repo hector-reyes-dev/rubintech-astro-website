@@ -1,0 +1,117 @@
+---
+import Card from '../ui/Card.astro';
+import Button from '../ui/Button.astro';
+import Icon from '../ui/Icon.astro';
+
+const services = [
+  {
+    title: 'Consultoría de Proyectos',
+    description: 'Análisis estratégico y planificación de soluciones tecnológicas personalizadas para optimizar tus procesos de negocio.',
+    icon: 'lightbulb',
+    features: ['Análisis de Requerimientos', 'Arquitectura de Soluciones', 'Roadmap Tecnológico', 'Consultoría Estratégica'],
+    color: 'from-blue-500 to-blue-600'
+  },
+  {
+    title: 'Desarrollo de Software',
+    description: 'Aplicaciones web y móviles robustas, escalables y seguras utilizando las últimas tecnologías y mejores prácticas.',
+    icon: 'code',
+    features: ['Aplicaciones Web', 'Apps Móviles', 'APIs RESTful', 'Microservicios'],
+    color: 'from-green-500 to-green-600'
+  },
+  {
+    title: 'E-commerce y Páginas Web',
+    description: 'Sitios web modernos y tiendas online optimizadas para conversión, SEO y experiencia de usuario excepcional.',
+    icon: 'shopping-cart',
+    features: ['Tiendas Online', 'Sitios Corporativos', 'Landing Pages', 'Optimización SEO'],
+    color: 'from-purple-500 to-purple-600'
+  },
+  {
+    title: 'Automatización de Procesos',
+    description: 'Soluciones de automatización que eliminan tareas repetitivas y optimizan la eficiencia operacional de tu empresa.',
+    icon: 'cog',
+    features: ['Workflows Automatizados', 'Integración de Sistemas', 'Bots Inteligentes', 'Reportes Automáticos'],
+    color: 'from-orange-500 to-orange-600'
+  }
+];
+---
+
+<section id="servicios" class="bg-gray-50 py-20 lg:py-32">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
+        <Icon name="star" size="sm" class="mr-2" />
+        Nuestros Servicios
+      </div>
+      
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        Soluciones diseñadas para 
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+          transformar tus operaciones
+        </span>
+      </h2>
+      
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Ofrecemos un ecosistema completo de servicios tecnológicos para impulsar el crecimiento 
+        y la eficiencia de tu negocio en la era digital.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      {services.map((service, index) => (
+        <Card variant="service" hover={true} class="group">
+          <div class="p-8">
+            <!-- Service Icon -->
+            <div class={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${service.color} rounded-xl mb-6 group-hover:scale-110 transition-transform duration-200`}>
+              <Icon name={service.icon} size="lg" class="text-white" />
+            </div>
+            
+            <!-- Service Content -->
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-200">
+              {service.title}
+            </h3>
+            
+            <p class="text-gray-600 leading-relaxed mb-6">
+              {service.description}
+            </p>
+            
+            <!-- Features List -->
+            <ul class="space-y-3 mb-8">
+              {service.features.map((feature) => (
+                <li class="flex items-center text-sm text-gray-700">
+                  <Icon name="check" size="sm" class="text-green-500 mr-3 flex-shrink-0" />
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+            
+            <!-- CTA -->
+            <Button variant="outline" size="sm" class="w-full group-hover:bg-primary group-hover:text-white group-hover:border-primary">
+              Conocer Más
+            </Button>
+          </div>
+        </Card>
+      ))}
+    </div>
+
+    <!-- Bottom CTA Section -->
+    <div class="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 lg:p-12 text-center text-white">
+      <h3 class="text-2xl lg:text-3xl font-bold mb-4">
+        ¿Listo para transformar tu negocio?
+      </h3>
+      <p class="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
+        Agenda una consulta gratuita y descubre cómo nuestras soluciones pueden 
+        impulsar el crecimiento de tu empresa.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button variant="secondary" size="lg" class="bg-white text-primary hover:bg-gray-100">
+          Agendar Consulta Gratuita
+        </Button>
+        <Button variant="outline" size="lg" class="border-white text-white hover:bg-white hover:text-primary">
+          Ver Todos los Servicios
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>

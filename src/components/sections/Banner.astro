@@ -1,0 +1,91 @@
+---
+import Icon from '../ui/Icon.astro';
+
+const stats = [
+  {
+    number: '50+',
+    label: 'Proyectos Completados',
+    icon: 'check-circle'
+  },
+  {
+    number: '98%',
+    label: 'Satisfacción del Cliente',
+    icon: 'star'
+  },
+  {
+    number: '24/7',
+    label: 'Soporte Técnico',
+    icon: 'clock'
+  },
+  {
+    number: '5+',
+    label: 'Años de Experiencia',
+    icon: 'trending-up'
+  }
+];
+
+const technologies = [
+  'React', 'Node.js', 'Python', 'TypeScript', 'AWS', 'Docker'
+];
+---
+
+<section class="bg-white border-y border-gray-100">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+      {stats.map((stat) => (
+        <div class="text-center group">
+          <div class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg mb-4 group-hover:bg-primary/20 transition-colors duration-200">
+            <Icon name={stat.icon} size="md" class="text-primary" />
+          </div>
+          <div class="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
+            {stat.number}
+          </div>
+          <div class="text-sm lg:text-base text-gray-600 font-medium">
+            {stat.label}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Divider -->
+    <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mb-16"></div>
+
+    <!-- Technologies Section -->
+    <div class="text-center">
+      <h3 class="text-lg font-semibold text-gray-900 mb-8">
+        Tecnologías que dominamos
+      </h3>
+      
+      <!-- Technology Badges -->
+      <div class="flex flex-wrap justify-center gap-4 mb-8">
+        {technologies.map((tech) => (
+          <div class="px-4 py-2 bg-gray-50 hover:bg-gray-100 rounded-full text-sm font-medium text-gray-700 transition-colors duration-200 cursor-default">
+            {tech}
+          </div>
+        ))}
+      </div>
+
+      <!-- Client Testimonial Preview -->
+      <div class="max-w-2xl mx-auto">
+        <blockquote class="text-lg text-gray-600 italic mb-4">
+          "Rubin Tech transformó completamente nuestros procesos digitales. Su enfoque profesional y soluciones innovadoras superaron nuestras expectativas."
+        </blockquote>
+        <div class="flex items-center justify-center space-x-4">
+          <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+            <span class="text-white font-semibold text-sm">JM</span>
+          </div>
+          <div class="text-left">
+            <div class="font-semibold text-gray-900">Juan Martínez</div>
+            <div class="text-sm text-gray-600">CEO, TechCorp</div>
+          </div>
+          <div class="flex space-x-1">
+            {[...Array(5)].map((_, i) => (
+              <Icon name="star" size="sm" class="text-yellow-400" />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

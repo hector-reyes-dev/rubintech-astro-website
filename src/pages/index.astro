@@ -1,16 +1,23 @@
 ---
+import Layout from "../components/layout/Layout.astro";
+import Hero from "../components/sections/Hero.astro";
+import Banner from "../components/sections/Banner.astro";
+import Services from "../components/sections/Services.astro";
+import Projects from "../components/sections/Projects.astro";
+import Testimonials from "../components/sections/Testimonials.astro";
+import CTA from "../components/sections/CTA.astro";
 
+import "../styles/global.css";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout
+  title="Rubin Tech - Transformamos desafíos en oportunidades tecnológicas"
+  description="Soluciones tecnológicas personalizadas que eliminan barreras, optimizan procesos y crean oportunidades. Tu socio estratégico en transformación digital."
+>
+  <Hero />
+  <Banner />
+  <Services />
+  <Projects />
+  <Testimonials />
+  <CTA />
+</Layout>

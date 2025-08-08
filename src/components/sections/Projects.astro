@@ -1,0 +1,128 @@
+---
+import Card from '../ui/Card.astro';
+import Button from '../ui/Button.astro';
+import Icon from '../ui/Icon.astro';
+
+const projects = [
+  {
+    title: 'Plataforma E-commerce B2B',
+    description: 'Sistema completo de comercio electrónico para empresa mayorista con gestión de inventario, catálogo dinámico y portal de clientes.',
+    category: 'E-commerce',
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
+    image: '/projects/ecommerce-preview.jpg',
+    results: [
+      { metric: 'Ventas Online', value: '+300%' },
+      { metric: 'Tiempo de Proceso', value: '-60%' },
+      { metric: 'Satisfacción Cliente', value: '98%' }
+    ]
+  },
+  {
+    title: 'App Móvil de Gestión',
+    description: 'Aplicación móvil para gestión de equipos de trabajo en campo con geolocalización, reportes en tiempo real y sincronización offline.',
+    category: 'Mobile App',
+    technologies: ['React Native', 'Firebase', 'Google Maps', 'Redux'],
+    image: '/projects/mobile-app-preview.jpg',
+    results: [
+      { metric: 'Productividad', value: '+45%' },
+      { metric: 'Tiempo de Reporte', value: '-80%' },
+      { metric: 'Adopción Usuario', value: '95%' }
+    ]
+  },
+  {
+    title: 'Sistema de Automatización',
+    description: 'Plataforma de automatización de procesos administrativos con integración ERP, workflows personalizables y dashboard analítico.',
+    category: 'Automatización',
+    technologies: ['Python', 'Django', 'Celery', 'Docker'],
+    image: '/projects/automation-preview.jpg',
+    results: [
+      { metric: 'Procesos Automatizados', value: '85%' },
+      { metric: 'Reducción Errores', value: '-92%' },
+      { metric: 'Ahorro Tiempo', value: '40h/sem' }
+    ]
+  }
+];
+---
+
+<section class="bg-white py-20 lg:py-32">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-medium mb-6">
+        <Icon name="briefcase" size="sm" class="mr-2" />
+        Proyectos en Desarrollo
+      </div>
+      
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        Casos de éxito que 
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">
+          transforman industrias
+        </span>
+      </h2>
+      
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Descubre cómo hemos ayudado a empresas como la tuya a alcanzar sus objetivos 
+        a través de soluciones tecnológicas innovadoras y resultados medibles.
+      </p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+      {projects.map((project, index) => (
+        <Card variant="project" hover={true} class="group overflow-hidden">
+          <!-- Project Image -->
+          <div class="relative h-48 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+              <Icon name="image" size="lg" class="text-gray-400" />
+            </div>
+            <!-- Category Badge -->
+            <div class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-gray-700">
+              {project.category}
+            </div>
+          </div>
+          
+          <!-- Project Content -->
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors duration-200">
+              {project.title}
+            </h3>
+            
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              {project.description}
+            </p>
+            
+            <!-- Technologies -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              {project.technologies.map((tech) => (
+                <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-md">
+                  {tech}
+                </span>
+              ))}
+            </div>
+            
+            <!-- Results -->
+            <div class="space-y-3 mb-6">
+              {project.results.map((result) => (
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-600">{result.metric}:</span>
+                  <span class="font-semibold text-green-600">{result.value}</span>
+                </div>
+              ))}
+            </div>
+            
+            <!-- CTA -->
+            <Button variant="outline" size="sm" class="w-full group-hover:bg-primary group-hover:text-white group-hover:border-primary">
+              Ver Caso Completo
+            </Button>
+          </div>
+        </Card>
+      ))}
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="text-center">
+      <Button variant="primary" size="lg" href="/proyectos">
+        Ver Todos los Proyectos
+      </Button>
+    </div>
+  </div>
+</section>
