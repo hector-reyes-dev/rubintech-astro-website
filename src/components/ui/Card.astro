@@ -1,0 +1,26 @@
+---
+export interface Props {
+  variant?: 'default' | 'bordered' | 'hover';
+  class?: string;
+}
+
+const { 
+  variant = 'default', 
+  class: className = '',
+  ...rest 
+} = Astro.props;
+
+const baseClasses = 'rounded-xl transition-all duration-200';
+
+const variants = {
+  default: 'bg-white shadow-md border border-gray-100',
+  bordered: 'bg-white border-2 border-gray-200',
+  hover: 'bg-white shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1'
+};
+
+const classes = `${baseClasses} ${variants[variant]} ${className}`;
+---
+
+<div class={classes} {...rest}>
+  <slot />
+</div>
